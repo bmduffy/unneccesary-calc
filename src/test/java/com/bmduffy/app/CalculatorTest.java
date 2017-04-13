@@ -16,11 +16,16 @@ public class CalculatorTest extends TestCase {
     }
 
     @Test public void testAdd(){
-      assertEqual( Calculator.add( 1.0, 2.0 ), 3.0 );
+      assertEqual( Calculator.add(1.0, 2.0), 3.0 );
     }
 
     @Test public void testSubtract() {
-      assertEqual( Calculator.subtract( 2.0, 1.0 ), 1.0);
-      assertEqual( Calculator.subtract( 1.0, 2.0 ), -1.0);
+      assertEqual( Calculator.subtract(2.0, 1.0), 1.0);
+      assertEqual( Calculator.subtract(1.0, 2.0), -1.0);
+    }
+
+    @Test public void testCalculate() {
+      assertEqual(Calculator.compute("2 + 2"), 4.0);
+      assertEqual(Calculator.compute("(3-9) + 2", -4.0);
     }
 }

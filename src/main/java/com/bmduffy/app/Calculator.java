@@ -11,4 +11,7 @@ public class Calculator {
     return l - r;
   }
 
+  public static double calculate(String expression) {
+    parts = expression.split(" ");
+  }
 }
